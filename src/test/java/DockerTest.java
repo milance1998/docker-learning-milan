@@ -23,7 +23,7 @@ public class DockerTest {
 //        String userDir = System.getProperty("user.dir");
 //        System.out.println(userDir);
 //        System.setProperty("webdriver.chrome.driver", userDir + "/drivers/chromedriver-linux-64bit");
-        String selenoid = "http://localhost:4444/wd/hub";
+        String selenoid = "http://192.168.0.41:4444/wd/hub";
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setCapability(CapabilityType.BROWSER_NAME, "chrome");
