@@ -1,21 +1,16 @@
 import io.qameta.allure.Description;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URI;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
-public class DockerTest {
+public class DockerTest extends POClass {
 
     public WebDriver driver;
 
@@ -46,7 +41,9 @@ public class DockerTest {
     @Test
     public void exampleTest() throws InterruptedException {
         driver.get("https://www.google.com");
+        justTestMethod();
         Thread.sleep(10000);
+        justTestMethod2();
     }
 
     @AfterEach
