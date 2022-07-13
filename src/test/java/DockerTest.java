@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -41,7 +42,7 @@ public class DockerTest {
 //        driver.manage().window().maximize();
     }
 
-
+    @Description("Test used for practicing.")
     @Test
     public void exampleTest() throws InterruptedException {
         driver.get("https://www.google.com");
